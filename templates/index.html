@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balls™ Email Bomber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Balls™ Email Bomber</h1>
+        <form id="emailForm">
+            <label for="target">Target Email:</label>
+            <input type="email" id="target" name="target" required>
+
+            <label for="server">Email Server:</label>
+            <select id="server" name="server" required>
+                <option value="1">Gmail</option>
+                <option value="2">Yahoo</option>
+                <option value="3">Outlook</option>
+            </select>
+
+            <label for="fromAddr">From Email:</label>
+            <input type="email" id="fromAddr" name="fromAddr" required>
+
+            <label for="fromPwd">From Password:</label>
+            <input type="password" id="fromPwd" name="fromPwd" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <input id="message" name="message" required></textarea>
+
+            <label for="amount">Number of Emails:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <button type="submit">Start Bombing</button>
+        </form>
+        <div id="status"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

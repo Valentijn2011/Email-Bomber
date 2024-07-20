@@ -1,0 +1,80 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-style: light;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(9, 9, 9);
+}
+
+label {
+    color: white;
+}
+
+select{
+    font-family: "Raleway", sans-serif;
+    color: white;
+    background-color:#353535;
+    border:#353535;
+    border-radius:8px;
+    box-shadow: 0 0 10px rgb(20, 20, 20);
+}
+
+input {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    background-color: #353535;
+    border:#353535;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(20, 20, 20);
+}
+
+h1 {
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    font-family: "Raleway", sans-serif;
+    background-color: #00a3a3;
+    border-radius:8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgb(20, 20, 20);
+}
+
+button:hover {
+    font-family: "Raleway", sans-serif;
+    background-color: #008b8b;
+    border-radius:8px;
+    box-shadow: 0 0 10px rgb(20, 20, 20);
+}
+
+#status {
+    margin-top: 20px;
+    color: #00ff3c;
+}
